@@ -1,0 +1,141 @@
+/* Team Details */
+/* Vishwakarma, Himanshu | Marquez, Andrea */
+/* 1002240465 | 1001515535 */
+
+/* fonts used */
+/* Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+/* Colors: (hex form): #333; #000, #fff, #808080, #4e4e4e*/
+
+/* Styling for the login heading */
+.login-container h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* Styling for error messages */
+.login-container p {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    background-color: #555;
+    margin: 5% 20%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7.5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: auto;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login-container button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.logout-container {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.logout-container button {
+    width: 10%;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.logout-container button:hover {
+    background-color: #999;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.login-container input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container, .logout-container {
+        padding: 10px;
+    }
+
+    .login-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-container button, .logout-container button {
+        width: 100%;
+    }
+
+    .logout-container button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .login-container input, select, .login-container button {
+        font-size: 14px;
+    }
+}

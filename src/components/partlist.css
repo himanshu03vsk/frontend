@@ -1,0 +1,67 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: auto;
+  }
+
+title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+
+.scrollList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-height: 600px;
+    padding-right: 10px;
+
+    scrollbar-width: thin;  
+    -ms-overflow-style: none; 
+}
+
+.card {
+    display: flex;
+    color: #333;
+    width: 100%;
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 15px;
+    align-items: center;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.info {
+    flex: 1;
+}
+
+.PLbutton {
+    margin-top: 10px;
+    padding: 10px 35px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}

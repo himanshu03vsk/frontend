@@ -1,0 +1,107 @@
+/* Team Details */
+/* Vishwakarma, Himanshu | Marquez, Andrea */
+/* 1002240465 | 1001515535 */
+.container {
+    display: flex;
+    margin: 20px auto; /* Adding more margin for spacing */
+    gap: 20px; /* Add space between elements */
+    max-width: 1200px; /* Optional: set a max-width for better control */
+}
+
+
+.entry {
+    flex: 2;
+    background-color: #333;
+
+}
+
+.para {
+    padding: 5px;
+    border-radius: 1%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    font-size: 20px;
+    max-height: 300px; /* Set a max height to create scrollable space */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .para {
+        max-height: 200px; /* Optional: Adjust height for smaller screens */
+    }
+}
+
+
+.item {
+    /* margin: 0 5px; */
+    display: block;
+    border-radius: 5px;
+}
+
+.image {
+    flex:1;
+    max-height:60vh;
+    width: auto;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+#to-prod {
+    text-decoration: none;
+}
+
+
+#arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+#start-button {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    height: 70px;
+    font-size: 18px;
+    background-color: #999;
+    /* width: 300px; */
+    /* transition: background-color 0.4s ease; */
+    transition: transform 0.3s ease;
+}
+
+
+
+#start-button:hover #arrow{
+    transform: scale(1.2);
+}
+
+#start-button:hover {
+    color: white;
+    transform: scale(1.1);
+    background: hsla(0, 0%, 20%, 1);
+    background: linear-gradient(90deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 14%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 14%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 14%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#333333", endColorstr="#242424", GradientType=1 );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+backend/
+│── config/
+│   ├── db.js               # MySQL connection
+│── models/
+│   ├── Part.js             # Car parts model
+│   ├── Car.js              # Car model
+│   ├── Person.js           # Users (buyers & sellers)
+│   ├── Buyer.js            # Buyer model
+│   ├── Seller.js           # Seller model
+│   ├── Shipment.js         # Shipment model
+│   ├── Cart.js             # Cart model
+│   ├── Payment.js          # Payment model
+│── routes/
+│   ├── partRoutes.js       # Parts API
+│   ├── carRoutes.js        # Car API
+│   ├── userRoutes.js       # User API
+│   ├── cartRoutes.js       # Cart API
+│   ├── paymentRoutes.js    # Payment API
+│   ├── shipmentRoutes.js   # Shipment API
+│── controllers/
+│   ├── partController.js   # Part logic
+│   ├── carController.js    # Car logic
+│   ├── userController.js   # User logic
+│   ├── cartController.js   # Cart logic
+│   ├── paymentController.js# Payment logic
+│   ├── shipmentController.js# Shipment logic
+│── middleware/
+│   ├── authMiddleware.js   # Authentication middleware
+│── server.js               # Main backend entry file
+│── .env                    # Environment variables
+│── package.json            # Dependencies

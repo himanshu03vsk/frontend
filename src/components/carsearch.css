@@ -1,0 +1,45 @@
+/* .CSform {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.CSinput  {
+    padding: 10px;
+    margin-right: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 20%;
+  }
+
+.CSbutton {
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 20%;
+  } */
+
+
+
+.car-search-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}

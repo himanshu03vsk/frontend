@@ -1,0 +1,31 @@
+/* .partUL {
+    list-style: none;
+    padding: 0;
+    max-width: 300px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.partLI {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    background-color: #555;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+} */
+
+
+.category-list-item {
+    background-color: #525050;
+    border-radius: 0.25rem;
+    border: #444 solid 1px;
+}
+
+.category-list-item:hover {
+    background-color: #444;
+}
