@@ -48,7 +48,7 @@ const RelatedProducts = ({ category, currentId }) => {
                 <div className="price-name flex flex-col justify-center flex-1">
                   <img
                     className=" mb-1 rounded"
-                    src={`/public/images/${p.part_type} 2.jpg`}
+                    src={`/images/${p.part_type} 2.jpg`}
                     alt={p.part_name}
                     width="100"
                   />

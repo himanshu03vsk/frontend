@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  server: {
+    port: 8080, // Ensure this is set to 8080
+  },
   
 })
