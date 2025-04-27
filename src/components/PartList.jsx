@@ -59,7 +59,7 @@
 //                 className="flex justify-between items-center gap-4 p-4 rounded-lg bg-gray-300 text-gray-800"
 //               >
 //                 <img
-//                   src={`/public/images/${part.part_type} ${_}.jpg`}
+//                   src={`/images/${part.part_type} ${_}.jpg`}
 //                   alt={part.part_type}
 //                   className="w-[150px] h-[150px] object-cover rounded"
 //                 />
@@ -202,7 +202,7 @@
 //                 >
 //                   {/* Part Image */}
 //                   <img
-//                     src={`/public/images/${part.part_type} ${getRandomImageIndex()}.jpg`}
+//                     src={`/images/${part.part_type} ${getRandomImageIndex()}.jpg`}
 //                     alt={part.part_type}
 //                     className="w-[150px] h-[150px] object-cover rounded"
 //                   />
@@ -350,7 +350,7 @@ const PartList = ({ category, carFilters }) => {
                 >
                   {/* Part Image */}
                   <img
-                    src={`/public/images/${part.part_type} ${getRandomImageIndex()}.jpg`}
+                    src={`/images/${part.part_type} ${getRandomImageIndex()}.jpg`}
                     alt={part.part_type}
                     className="w-full sm:w-[150px] h-auto sm:h-[150px] object-cover rounded mb-4 sm:mb-0"
                   />

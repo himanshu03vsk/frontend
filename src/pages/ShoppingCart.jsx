@@ -128,7 +128,7 @@ const ShoppingCart = () => {
                         {/* Image */}
                         <div className="sm:w-1/4 mb-4 sm:mb-0 flex justify-center items-center">
                             <img
-                                src={`public/images/${item.part_type} 1.jpg`}
+                                src={`/images/${item.part_type} 1.jpg`}
                                 alt={item.part_name}
                                 className="m-3 w-full h-auto object-contain max-w-full"
                             />
