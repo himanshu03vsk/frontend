@@ -4,6 +4,8 @@ import axios from "axios";
 
 // Replace with the actual email of the logged-in buyer
 const socket = io("http://localhost:3000");
+// const socket = io.connect('https://your-backend-app-name.azurewebsites.net');
+
 
 const BuyerChat = () => {
   const [messages, setMessages] = useState([]);

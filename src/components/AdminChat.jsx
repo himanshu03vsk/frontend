@@ -3,6 +3,8 @@ import io from "socket.io-client";
 import axios from "axios";
 
 const socket = io("http://localhost:3000");
+// const socket = io.connect('https://your-backend-app-name.azurewebsites.net');
+
 const ADMIN_EMAIL = "himanshu03vsk@gmail.com";
 
 const AdminChat = () => {
