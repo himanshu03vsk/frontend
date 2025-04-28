@@ -20,7 +20,7 @@ const Register = () => {
         e.preventDefault();
         try {
             // Make the registration request
-            const response = await axios.post('http://localhost:3000/api/auth/register', {
+            const response = await axios.post('http://backend-carshop.onrender.com/api/auth/register', {
                 email,
                 p_password, // Use 'password' as expected by most backends
                 fname,

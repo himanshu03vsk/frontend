@@ -10,7 +10,7 @@ const ProductActions = ({ product }) => {
     const fetchProductDetails = async () => {
       try {
         // Make sure you send the correct product ID or product object
-        const response = await fetch(`http://localhost:3000/api/parts/color/${product}`);
+        const response = await fetch(`http://backend-carshop.onrender.com/api/parts/color/${product}`);
         const data = await response.json();
         // console.log(data);
 
@@ -48,7 +48,7 @@ const ProductActions = ({ product }) => {
           buyer_email: buyer_email,  // Use extracted email
         });
         try {
-          const response = await fetch(`http://localhost:3000/api/carts/${buyer_email}`, {
+          const response = await fetch(`http://backend-carshop.onrender.com/api/carts/${buyer_email}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',

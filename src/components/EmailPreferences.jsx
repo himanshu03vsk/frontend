@@ -10,7 +10,7 @@ const EmailPreferences = () => {
   useEffect(() => {
     const fetchPreferences = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/buyer/getPreferences/${email}`, {
+        const res = await fetch(`http://backend-carshop.onrender.com/api/buyer/getPreferences/${email}`, {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -47,7 +47,7 @@ const EmailPreferences = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/buyer/updatePreferences/${email}`, {
+      const res = await fetch(`http://backend-carshop.onrender.com/api/buyer/updatePreferences/${email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

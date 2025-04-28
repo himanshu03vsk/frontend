@@ -11,14 +11,14 @@
 
 //   const buildApiUrl = () => {
 //     if (category) {
-//       return `http://localhost:3000/api/parts/by-category?category=${encodeURIComponent(category)}`;
+//       return `http://backend-carshop.onrender.com/api/parts/by-category?category=${encodeURIComponent(category)}`;
 //     } else if (carFilters.make || carFilters.model || carFilters.year) {
 //       const queryParams = new URLSearchParams({
 //         make: carFilters.make,
 //         model: carFilters.model,
 //         year: carFilters.year,
 //       }).toString();
-//       return `http://localhost:3000/api/parts-of-cars/search?${queryParams}`;
+//       return `http://backend-carshop.onrender.com/api/parts-of-cars/search?${queryParams}`;
 //     }
 //     return null;
 //   };
@@ -28,7 +28,7 @@
 //       setLoading(true);
 //       setError('');
 //       let url = buildApiUrl();
-//       if (!url) url = 'http://localhost:3000/api/parts/catelogue';
+//       if (!url) url = 'http://backend-carshop.onrender.com/api/parts/catelogue';
 
 //       try {
 //         const res = await fetch(url);
@@ -110,14 +110,14 @@
 
 //   const buildApiUrl = () => {
 //     if (category) {
-//       return `http://localhost:3000/api/parts/by-category?category=${encodeURIComponent(category)}`;
+//       return `http://backend-carshop.onrender.com/api/parts/by-category?category=${encodeURIComponent(category)}`;
 //     } else if (carFilters.make || carFilters.model || carFilters.year) {
 //       const queryParams = new URLSearchParams({
 //         make: carFilters.make,
 //         model: carFilters.model,
 //         year: carFilters.year,
 //       }).toString();
-//       return `http://localhost:3000/api/parts-of-cars/search?${queryParams}`;
+//       return `http://backend-carshop.onrender.com/api/parts-of-cars/search?${queryParams}`;
 //     }
 //     return null;
 //   };
@@ -127,7 +127,7 @@
 //       setLoading(true);
 //       setError('');
 //       let url = buildApiUrl();
-//       if (!url) url = 'http://localhost:3000/api/parts/catelogue';
+//       if (!url) url = 'http://backend-carshop.onrender.com/api/parts/catelogue';
 
 //       try {
 //         const res = await fetch(url);
@@ -258,14 +258,14 @@ const PartList = ({ category, carFilters }) => {
 
   const buildApiUrl = () => {
     if (category) {
-      return `http://localhost:3000/api/parts/by-category?category=${encodeURIComponent(category)}`;
+      return `http://backend-carshop.onrender.com/api/parts/by-category?category=${encodeURIComponent(category)}`;
     } else if (carFilters.make || carFilters.model || carFilters.year) {
       const queryParams = new URLSearchParams({
         make: carFilters.make,
         model: carFilters.model,
         year: carFilters.year,
       }).toString();
-      return `http://localhost:3000/api/parts-of-cars/search?${queryParams}`;
+      return `http://backend-carshop.onrender.com/api/parts-of-cars/search?${queryParams}`;
     }
     return null;
   };
@@ -275,7 +275,7 @@ const PartList = ({ category, carFilters }) => {
       setLoading(true);
       setError('');
       let url = buildApiUrl();
-      if (!url) url = 'http://localhost:3000/api/parts/catelogue';
+      if (!url) url = 'http://backend-carshop.onrender.com/api/parts/catelogue';
 
       try {
         const res = await fetch(url);

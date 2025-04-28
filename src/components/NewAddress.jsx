@@ -26,7 +26,7 @@ const NewAddress = () => {
 
     // Assuming you have an API endpoint to add the address
     try {
-      const response = await fetch("http://localhost:3000/api/buyer-addresses/create", {
+      const response = await fetch("http://backend-carshop.onrender.com/api/buyer-addresses/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

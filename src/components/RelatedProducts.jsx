@@ -14,7 +14,7 @@ const RelatedProducts = ({ category, currentId }) => {
       try {
         const token = localStorage.getItem("token");
         const res = await fetch(
-          `http://localhost:3000/api/parts/related?category=${category}&exclude=${currentId}`,
+          `http://backend-carshop.onrender.com/api/parts/related?category=${category}&exclude=${currentId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

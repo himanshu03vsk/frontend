@@ -20,8 +20,8 @@
 //       const token = localStorage.getItem('token');
 
 //       const [addressResponse, paymentResponse] = await Promise.all([
-//         fetch(`http://localhost:3000/api/buyer-addresses/${user.email}`),
-//         fetch(`http://localhost:3000/api/payments/${user.email}`, {
+//         fetch(`http://backend-carshop.onrender.com/api/buyer-addresses/${user.email}`),
+//         fetch(`http://backend-carshop.onrender.com/api/payments/${user.email}`, {
 //           headers: {
 //             'Content-Type': 'application/json',
 //             Authorization: `Bearer ${token}`,
@@ -69,7 +69,7 @@
 
 //     try {
 //       // Step 1: Create the order
-//       const orderResponse = await fetch('http://localhost:3000/api/orders', {
+//       const orderResponse = await fetch('http://backend-carshop.onrender.com/api/orders', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -87,7 +87,7 @@
 //       const { order_id } = await orderResponse.json();
 
 //       // Step 2: Fetch cart items
-//       const cartResponse = await fetch(`http://localhost:3000/api/carts/${userEmail}`, {
+//       const cartResponse = await fetch(`http://backend-carshop.onrender.com/api/carts/${userEmail}`, {
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
 
@@ -101,7 +101,7 @@
 
 //       // Step 3: Create shipments
 //       for (const item of cartItems) {
-//         await fetch('http://localhost:3000/api/shipments', {
+//         await fetch('http://backend-carshop.onrender.com/api/shipments', {
 //           method: 'POST',
 //           headers: {
 //             'Content-Type': 'application/json',
@@ -118,7 +118,7 @@
 //       }
 
 //       // Step 4: Clear the cart
-//       await fetch(`http://localhost:3000/api/carts/clear/${userEmail}`, {
+//       await fetch(`http://backend-carshop.onrender.com/api/carts/clear/${userEmail}`, {
 //         method: 'DELETE',
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
@@ -129,7 +129,7 @@
 //       const formattedCartItems = cartItems.map(item => `${item.quantity} x ${item.part_id} (${item.color})`).join(', ');
 
 //       // Step 5: Get buyer notification preferences
-//       const buyerResponse = await fetch(`http://localhost:3000/api/buyer/getPreferences/${userEmail}`, {
+//       const buyerResponse = await fetch(`http://backend-carshop.onrender.com/api/buyer/getPreferences/${userEmail}`, {
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
 
@@ -257,8 +257,8 @@ const CheckoutPage = () => {
       const token = localStorage.getItem('token');
 
       const [addressResponse, paymentResponse] = await Promise.all([
-        fetch(`http://localhost:3000/api/buyer-addresses/${user.email}`),
-        fetch(`http://localhost:3000/api/payments/${user.email}`, {
+        fetch(`http://backend-carshop.onrender.com/api/buyer-addresses/${user.email}`),
+        fetch(`http://backend-carshop.onrender.com/api/payments/${user.email}`, {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
@@ -306,7 +306,7 @@ const CheckoutPage = () => {
 
     try {
       // Step 1: Create the order
-      const orderResponse = await fetch('http://localhost:3000/api/orders', {
+      const orderResponse = await fetch('http://backend-carshop.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -324,7 +324,7 @@ const CheckoutPage = () => {
       const { order_id } = await orderResponse.json();
 
       // Step 2: Fetch cart items
-      const cartResponse = await fetch(`http://localhost:3000/api/carts/${userEmail}`, {
+      const cartResponse = await fetch(`http://backend-carshop.onrender.com/api/carts/${userEmail}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -338,7 +338,7 @@ const CheckoutPage = () => {
 
       // Step 3: Create shipments
       for (const item of cartItems) {
-        await fetch('http://localhost:3000/api/shipments', {
+        await fetch('http://backend-carshop.onrender.com/api/shipments', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -355,7 +355,7 @@ const CheckoutPage = () => {
       }
 
       // Step 4: Clear the cart
-      await fetch(`http://localhost:3000/api/carts/clear/${userEmail}`, {
+      await fetch(`http://backend-carshop.onrender.com/api/carts/clear/${userEmail}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -366,7 +366,7 @@ const CheckoutPage = () => {
       const formattedCartItems = cartItems.map(item => `${item.quantity} x ${item.part_id} (${item.color})`).join(', ');
 
       // Step 5: Get buyer notification preferences
-      const buyerResponse = await fetch(`http://localhost:3000/api/buyer/getPreferences/${userEmail}`, {
+      const buyerResponse = await fetch(`http://backend-carshop.onrender.com/api/buyer/getPreferences/${userEmail}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

@@ -16,7 +16,7 @@ const ProductDetail = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch(`http://localhost:3000/api/parts/${id}`, {
+        const res = await fetch(`http://backend-carshop.onrender.com/api/parts/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",

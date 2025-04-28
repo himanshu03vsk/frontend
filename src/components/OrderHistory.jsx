@@ -9,7 +9,7 @@ const OrderHistory = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/orders/${buyer_email}`, {
+        const res = await fetch(`http://backend-carshop.onrender.com/api/orders/${buyer_email}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

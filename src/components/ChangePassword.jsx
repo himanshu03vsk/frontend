@@ -19,7 +19,7 @@ const ChangePassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch('http://localhost:3000/api/reset-password/update', {
+    const res = await fetch('http://backend-carshop.onrender.com/api/reset-password/update', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ const UpdateProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/auth/getUserDetails/${JSON.parse(localStorage.getItem('user')).email}`, {
+        const res = await fetch(`http://backend-carshop.onrender.com/api/auth/getUserDetails/${JSON.parse(localStorage.getItem('user')).email}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
@@ -49,7 +49,7 @@ const UpdateProfile = () => {
     setStatus('');
 
     try {
-      const res = await fetch(`http://localhost:3000/api/auth/updateUserDetails/${JSON.parse(localStorage.getItem('user')).email}`, {
+      const res = await fetch(`http://backend-carshop.onrender.com/api/auth/updateUserDetails/${JSON.parse(localStorage.getItem('user')).email}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
