@@ -13,7 +13,7 @@ const ShoppingCart = () => {
         const fetchCartItems = async () => {
             const buyer_email = JSON.parse(localStorage.getItem('user')).email;
             try {
-                const response = await fetch(`http://backend-carshop.onrender.com/api/carts/${buyer_email}`, {
+                const response = await fetch(`https://backend-carshop.onrender.com/api/carts/${buyer_email}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const ShoppingCart = () => {
 
                 const enrichedItems = await Promise.all(
                     data.map(async (item) => {
-                        const partRes = await fetch(`http://backend-carshop.onrender.com/api/parts/${item.part_id}`, {
+                        const partRes = await fetch(`https://backend-carshop.onrender.com/api/parts/${item.part_id}`, {
                             headers: {
                                 'Content-Type': 'application/json',
                                 authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -82,7 +82,7 @@ const ShoppingCart = () => {
         });
 
         try {
-            await fetch(`http://backend-carshop.onrender.com/api/carts/${itemToRemove.buyer_email}/${itemToRemove.part_id}/${itemToRemove.color}`, {
+            await fetch(`https://backend-carshop.onrender.com/api/carts/${itemToRemove.buyer_email}/${itemToRemove.part_id}/${itemToRemove.color}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ const ShoppingCart = () => {
         setSaving((prev) => ({ ...prev, [key]: true }));
 
         try {
-            await fetch(`http://backend-carshop.onrender.com/api/carts/updateCartItem/${item.buyer_email}/${item.part_id}/${item.color}?quantity=${updatedQty}`, {
+            await fetch(`https://backend-carshop.onrender.com/api/carts/updateCartItem/${item.buyer_email}/${item.part_id}/${item.color}?quantity=${updatedQty}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

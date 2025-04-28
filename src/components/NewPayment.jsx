@@ -42,7 +42,7 @@ const NewPayment = () => {
     try {
       // Send payment data to the backend using POST request
       
-      const response = await axios.post('http://backend-carshop.onrender.com/api/payments/create', paymentData, {
+      const response = await axios.post('https://backend-carshop.onrender.com/api/payments/create', paymentData, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${localStorage.getItem('token')}`,

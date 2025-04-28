@@ -14,7 +14,7 @@
 //         e.preventDefault();
 //         try {
 //             // Send a POST request to the /login endpoint
-//             const response = await axios.post('http://backend-carshop.onrender.com/api/auth/login', {
+//             const response = await axios.post('https://backend-carshop.onrender.com/api/auth/login', {
 //                 email,
 //                 password, // Ensure 'password' matches the expected key in the backend
 //             });
@@ -84,7 +84,7 @@ const Login = () => {
     e.preventDefault();
     try {
       // Make the login request
-      const response = await axios.post('http://backend-carshop.onrender.com/api/auth/login', {
+      const response = await axios.post('https://backend-carshop.onrender.com/api/auth/login', {
         email,
         p_password,
       });

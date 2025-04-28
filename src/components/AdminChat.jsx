@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import io from "socket.io-client";
 import axios from "axios";
 
-const socket = io("http://backend-carshop.onrender.com");
+const socket = io("https://backend-carshop.onrender.com");
 // const socket = io.connect('https://your-backend-app-name.azurewebsites.net');
 
 const ADMIN_EMAIL = "himanshu03vsk@gmail.com";
@@ -22,7 +22,7 @@ const AdminChat = () => {
     console.log("Before"); // Debugging line  
 
     axios
-      .get("http://backend-carshop.onrender.com/api/admin/chat/get-users")
+      .get("https://backend-carshop.onrender.com/api/admin/chat/get-users")
       .then((res) => {
         console.log("Fetched users:", res.data); // Debugging line  
         setUsers(res.data);
@@ -66,7 +66,7 @@ const AdminChat = () => {
     setCurrentUserEmail(email);
     try {
       const res = await axios.get(
-        `http://backend-carshop.onrender.com/api/admin/chat/${email}`
+        `https://backend-carshop.onrender.com/api/admin/chat/${email}`
       );
       setMessages(res.data);
       socket.emit("join_room", email);

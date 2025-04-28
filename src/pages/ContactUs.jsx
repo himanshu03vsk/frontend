@@ -32,7 +32,7 @@ const About = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://backend-carshop.onrender.com/api/enquiry", {
+      const response = await fetch("https://backend-carshop.onrender.com/api/enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

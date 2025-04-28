@@ -13,7 +13,7 @@ const Confirmation = () => {
     useEffect(() => {
         const fetchCart = async () => {
             try {
-                const response = await fetch(`http://backend-carshop.onrender.com/api/cart/${id}`);
+                const response = await fetch(`https://backend-carshop.onrender.com/api/cart/${id}`);
                 const data = await response.json();
                 setCart(data);
             } catch (error) {

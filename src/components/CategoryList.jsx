@@ -7,7 +7,7 @@ const CategoryList = ({ onCategorySelect }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch('http://backend-carshop.onrender.com/api/parts/categoryList', {
+        const res = await fetch('https://backend-carshop.onrender.com/api/parts/categoryList', {
           headers: {
             'Content-Type': 'application/json',
           },

@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchAdminOrders = async () => {
       try {
-        const response = await fetch("http://backend-carshop.onrender.com/api/admin/orders", {
+        const response = await fetch("https://backend-carshop.onrender.com/api/admin/orders", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

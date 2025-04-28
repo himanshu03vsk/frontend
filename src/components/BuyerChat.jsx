@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import axios from "axios";
 
 // Replace with the actual email of the logged-in buyer
-const socket = io("http://backend-carshop.onrender.com");
+const socket = io("https://backend-carshop.onrender.com");
 // const socket = io.connect('https://your-backend-app-name.azurewebsites.net');
 
 
@@ -23,7 +23,7 @@ const BuyerChat = () => {
 
     // Fetch past chat messages
     axios
-      .get(`http://backend-carshop.onrender.com/api/admin/chat/${BUYER_EMAIL}`)
+      .get(`https://backend-carshop.onrender.com/api/admin/chat/${BUYER_EMAIL}`)
       .then((res) => setMessages(res.data))
       .catch((err) => console.error("Error fetching chat messages:", err));
   }, []);

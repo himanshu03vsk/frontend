@@ -19,7 +19,7 @@ const Reviews = ({ partId }) => {
     };
 
     try {
-      const res = await fetch(`http://backend-carshop.onrender.com/api/parts/reviews`, {
+      const res = await fetch(`https://backend-carshop.onrender.com/api/parts/reviews`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ const Reviews = ({ partId }) => {
     const fetchReviews = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await fetch(`http://backend-carshop.onrender.com/api/parts/reviews/${partId}`, {
+        const res = await fetch(`https://backend-carshop.onrender.com/api/parts/reviews/${partId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",

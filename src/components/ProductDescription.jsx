@@ -6,7 +6,7 @@ const ProductDescription = ({ part }) => {
   useEffect(() => {
     const fetchCarDetails = async () => {
       try {
-        const response = await fetch(`http://backend-carshop.onrender.com/api/parts-of-cars/category/?part_id=${part.part_id}`);
+        const response = await fetch(`https://backend-carshop.onrender.com/api/parts-of-cars/category/?part_id=${part.part_id}`);
         const data = await response.json();
         setPart_car_details(data);
       } catch (error) {
