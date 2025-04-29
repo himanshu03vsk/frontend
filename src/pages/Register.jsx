@@ -56,7 +56,7 @@
 //                 <form onSubmit={handleSubmit} className="space-y-4">
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700">Email</label>
+//                         <label className="block text-sm font-medium text-white">Email</label>
 //                         <input
 //                             type="email"
 //                             value={email}
@@ -67,7 +67,7 @@
 //                     </div>
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700">Password</label>
+//                         <label className="block text-sm font-medium text-white">Password</label>
 //                         <input
 //                             type="password"
 //                             value={p_password}
@@ -78,7 +78,7 @@
 //                     </div>
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700">First Name</label>
+//                         <label className="block text-sm font-medium text-white">First Name</label>
 //                         <input
 //                             type="text"
 //                             value={fname}
@@ -89,7 +89,7 @@
 //                     </div>
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700">Last Name</label>
+//                         <label className="block text-sm font-medium text-white">Last Name</label>
 //                         <input
 //                             type="text"
 //                             value={lname}
@@ -100,7 +100,7 @@
 //                     </div>
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700">Date of Birth</label>
+//                         <label className="block text-sm font-medium text-white">Date of Birth</label>
 //                         <input
 //                             type="date"
 //                             value={dob}
@@ -111,7 +111,7 @@
 //                     </div>
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+//                         <label className="block text-sm font-medium text-white">Phone Number</label>
 //                         <input
 //                             type="tel"
 //                             value={phone}
@@ -122,7 +122,7 @@
 //                     </div>
 
 //                     <div>
-//                         <label className="block text-sm font-medium text-gray-700" htmlFor="carrier">Carrier</label>
+//                         <label className="block text-sm font-medium text-white" htmlFor="carrier">Carrier</label>
 //                         <select
 //                             id="carrier"
 //                             value={carrier}
@@ -257,12 +257,12 @@ const Register = () => {
   return (
     <div className="p-5 min-h-screen flex items-center justify-center">
       <div className="section w-full max-w-md p-8 bg-gray-500 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
+        <h2 className="text-2xl font-semibold text-center text-white mb-6">
           Create an Account
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Email
             </label>
             <input
@@ -277,7 +277,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Password
             </label>
             <input
@@ -294,7 +294,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               First Name
             </label>
             <input
@@ -309,7 +309,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Last Name
             </label>
             <input
@@ -324,7 +324,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Date of Birth
             </label>
             <input
@@ -339,7 +339,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Phone Number
             </label>
             <input
@@ -355,7 +355,7 @@ const Register = () => {
 
           <div>
             <label
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-white"
               htmlFor="carrier"
             >
               Carrier
